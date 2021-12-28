@@ -27,4 +27,5 @@ int main(){
         i++;
     }
     cout<<maxLen<<" ";
+    return 0;
 }
