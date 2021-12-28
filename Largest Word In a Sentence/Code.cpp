@@ -4,6 +4,7 @@ using namespace std;
 int main(){
     int n ;
     cin >> n;
+    cin.ignore();
 
     char arr[n+1];
     cin.getline(arr , n);
@@ -18,9 +19,10 @@ int main(){
                 maxLen = currLen;
             }
             currLen = 0;
+        }else{
+            currLen++;
         }
 
-        currLen++;
         if(arr[i] == '\0'){
             break;
         }
