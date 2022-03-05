@@ -13,7 +13,8 @@ int findArea(vector<int> hights){
 
     int res=0;
     for(int i=0 ; i<n ; i++){
-        if(min(prefix[i] , sufix[i])>hights[i]) res+=min(prefix[i] , sufix[i])-hights[i];
+        if(min(prefix[i] , sufix[i])>hights[i]) 
+          res += min(prefix[i],sufix[i]) - hights[i];
     }    
     return res;
 }
